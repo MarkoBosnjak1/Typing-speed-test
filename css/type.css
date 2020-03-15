@@ -1,0 +1,349 @@
+:root {
+    --main-purple-color: #530b9c;
+    --main-gray-color: #F3F3F3;
+  }
+
+body {
+    font-family: Titillium Web;
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/keyboard2.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color:var(--main-purple-color);
+    /*background-color: #cccccc;*/
+}
+
+
+
+#header {
+    overflow: hidden;
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap:nowrap;
+    padding-right:3.5em;
+    padding-left:3.5em;
+    height:4.5em;
+}
+
+.logo {
+    display:flex;
+    flex-wrap:nowrap;
+    align-items: center;
+    color:var(--main-blue-color);
+    flex-basis:20%;
+}
+.logo:hover {
+    cursor:pointer;
+}
+#typing {
+    font-size:1.3em;
+    padding-top:0.2em;
+    color:white;
+}
+#speed {
+    font-size:1.7em;
+    color:white;
+}
+
+.navbar {
+    margin-left: auto;
+    margin-right:auto ;
+    display:flex;
+    flex-wrap:nowrap;
+}
+.header_title {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    color:white;
+    text-decoration: none;
+    font-weight: 425;
+    font-size:1.2em;
+}
+.header_title:hover  {
+    cursor:pointer;
+    text-decoration: none;
+}
+p {
+    margin-bottom:0px;
+}
+
+.login {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2em;
+    font-weight: 425;
+    font-size: 1.2em;
+}
+
+.login :hover {
+    cursor:pointer;
+    color:var(--main-purple-color);
+    /*background-color: var(--main-gray-color);*/
+    box-shadow: 0.12em 0.12em 0.2em var(--main-gray-color);
+    transform: scale(1.1,1.1);
+    transition: all 0.32s ease-in-out;
+}
+
+.login > p {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 3.1em;
+    margin-bottom:0px;
+    height:1.82em;
+    border: 0px solid black;
+    border-radius: 6em;
+    background-color:var(--main-gray-color);
+    color:var(--main-purple-color);
+}
+
+.description {
+    margin-top:13em;
+    margin-left: 10%;
+    display:flex;
+    flex-direction: column;
+}
+.desc_row > span{ 
+    display:flex;
+    align-items: center;
+    font-size:4em;
+    color:white;
+    font-weight: 400;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.desc_row_2 {
+    border-radius:1em;
+    margin-top:2em;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:nowrap;
+    padding-left:0.7em;
+    font-size:1em;
+    width:20%;
+    background-color:white;
+}
+.desc_row_2:hover {
+    opacity:0.7;
+    cursor:pointer;
+}
+.desc_row_2 > a {
+    width:100%; 
+    padding:0;
+    margin-top:1em;
+    margin-bottom:1em;
+    display:block;
+    text-decoration: none;
+    text-decoration-color: none;
+    display:flex;
+    flex-wrap:nowrap;
+}
+
+#test_speed {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6vw;
+    color:black;
+}
+
+#typing_test_container {
+    margin-top:18em;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+#title {
+    width:30%;
+    text-align: center;
+    font-size:2.4em;
+    font-weight:300;
+    margin-top:3.2em;
+    margin-bottom:2em;
+    color:white;
+}
+
+.wpm_cpm {
+    display:flex;
+    width:100%;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.posto {
+    flex-basis:30%;
+    display:flex;
+    justify-content: center;
+    font-weight: 10;
+}
+.posto_2 {
+    flex-basis:30%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.number_container {
+    display:flex;
+    width:25%;
+    padding-top:0.3em;
+    font-size:4em;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.desc {
+    display:flex;
+    width: 25%;
+    padding-top:0em;
+    margin-bottom:1.2em;
+    font-size:0.8em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.test {
+    background-color: white;
+    height:3em;
+    margin-top:1em;
+    margin-bottom:15em;
+}
+
+#timer {
+    font-size:3em;
+    font-weight:300;
+    margin-top:0em;
+}
+#timer_text {
+    font-size:0.8em;
+    font-weight:400;
+}
+
+#textarea {
+    overflow:hidden;
+    float:right;
+    width:60%;
+    white-space:pre;
+    font-size:3.3em;
+    border-left:0.1em solid black;
+    background-color: white;  
+    font-weight:400;
+}
+#left {
+    overflow:hidden;
+    float:left;
+    width:40%;
+    height:5em;
+    background-color: white;  
+}   
+#garbage_text {
+    float:right;
+    font-size:3.3em;
+    font-weight:400;
+    padding-right:0.05em;
+    color:var(--main-purple-color);
+}
+    
+.sticky {    
+  position: fixed;
+  top: 0em;
+  width: 100%;
+}
+
+@media only screen and (max-width: 650px){
+    body {
+        font-size: 70%;
+    }
+    .navbar {
+        display:none;
+    }
+    .desc_row > span{
+        font-size:2em;
+    }
+    .description {
+        margin-top:8em;
+    }
+    #typing {
+        font-size:1em;
+        padding-top:0.2em;
+        color:white;
+    }
+    #speed {
+        font-size:1.3em;
+        color:white;
+    }
+    .login {
+        margin-right: 1.3em;
+        font-size: 0.6em;
+    }
+    #title {
+        width:60%;
+        font-size:2em;
+        margin-top:1.7em;
+        margin-bottom:0.5em;
+    }
+    .number_container {
+        display:flex;
+        width:50%;
+        padding-top:0.3em;
+        font-size:4em;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .desc {
+        display:flex;
+        width: 50%;
+        padding-top:0em;
+        margin-bottom:0.6em;
+        font-size:0.7em;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .test {
+        background-color: white;
+        height:3.5em;
+        margin-top:1em;
+        margin-bottom:15em;
+    }
+    #left {
+        overflow:hidden;
+        float:left;
+        width:40%;
+        height:3.5em;
+        background-color: white;  
+    }   
+    #garbage_text {
+        float:right;
+        font-size:2.3em;
+        font-weight:400;
+        padding-right:0.05em;
+        color:var(--main-purple-color);
+    }
+    #textarea {
+        overflow:hidden;
+        float:right;
+        width:60%;
+        white-space:pre;
+        font-size:2.3em;
+        border-left:0.1em solid black;
+        background-color: white;  
+        font-weight:400;
+    }
+}

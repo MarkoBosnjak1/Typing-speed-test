@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing speed test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/type.css">
+</head>
+<body> 
+    <div id="header" class="sticky">
+        <div class="logo">
+            <a id="typing">TYPING</a>
+            <a id="speed">SPEED</a>
+        </div>
+        <div class="navbar">
+            <a class="header_title" href="#"><p>HOME</p></a>
+            <a class="header_title" href="#"><p>START</p></a>
+            <a class="header_title" href="#"><p>CONTACT</p></a>
+        </div>
+        <div class="login"><p>Login</p></div>
+    </div>
+    <div class="description">
+        <div class="desc_row">
+            <span>Typing speed &<br>graphed results.<br>Train your skills!</span>
+        </div>
+        <div class="desc_row_2">
+            <a href="#left">
+                <div class="fa fa-arrow-circle-right" style="color:var(--main-purple-color); font-size:2.3vw;"></div> 
+                <div id="test_speed"><span>Test Speed</span></div>
+            </a>
+        </div>
+    </div> 
+    <div id="typing_test_container">
+        <h3 id="title">TYPING SPEED TEST</h3>
+        
+        <div class="wpm_cpm">
+            <div class="number_container"> 
+                <div id="wpm" class="posto">0</div>
+                <div id="cpm" class="posto">0</div>
+                <div id="accuracy" class="posto">100</div>
+            </div> 
+            <div class="desc">
+                <div id="wpm_text" class="posto_2">WORDS / MIN</div>
+                <div id="cpm_text" class="posto_2">CHAR / MIN</div>
+                <div id="accuarcy_text" class="posto_2">ACCURACY %</div>
+            </div>
+            <div id="timer" class="posto"></div>
+            <div id="timer_text">SEC</div>
+        </div>
+        <div class="break"></div>
+    </div>
+    <div class="test">
+            <div id="left">
+                <div id="garbage_text"></div>
+            </div>  
+            <div id="textarea"></div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/type.js"></script>
+</body>
+</html>
